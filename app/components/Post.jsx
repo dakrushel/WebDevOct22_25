@@ -17,7 +17,7 @@ const Post = () => {
   const addPost = (title) => {
     // Function to add a new post
     fetch("http://localhost:3300/posts", {
-      // Sending a POST request to the backend to add a new post
+      // Sending a POST request to the backend to add a new post.
       method: "POST", // Setting the request method as POST
       headers: { "Content-Type": "application/json" }, // Setting content type to JSON in the request headers
       body: JSON.stringify({ title }), // Sending the post title in the request body as JSON
